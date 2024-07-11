@@ -3689,6 +3689,19 @@ Server Side Rendering (SSR) Control: By default, Next.js pre-renders every page.
   },
 ```
 
+・gitのウェブサイトで、このプロジェクト用のgit repositoryを作成
+・既存のgitファイルを一度クリアにしてから、新たにgitファイルを作る
+rm -rf .git
+git init
+git commit -m 'first commit'
+・git repositoryに、ローカルのコードをpush
+・vercelでdeploy
+
+・deploy後、vercelのサイト上でenvファイルの内容を一部修正
+NEXT_PUBLIC_WEBSITE_URL　→ localhostを以下に修正
+http://home-away.vercel.app
+
+
 - refactor NavSearch Component
 
 ### Review Model
